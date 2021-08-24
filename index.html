@@ -10,74 +10,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Skillexplorers</title>
 	<style>
-				body {background-color: #0899FF; margin: 40px;}
-				h1 {color: #fff}
-				p{color:#fff}
-				.sidebar {
-				grid-area: sidebar;
-			  }
-			  .sidebar2 {
-				grid-area: sidebar2;
-			  }
-			  .content {
-				grid-area: content;
-			  }
-			  .header {
-				grid-area: header;
-			  }
-			  .footer {
-				grid-area: footer;
-			  }
-			  .wrapper {
-				background-color: #eeeeee;
-				color: #444;
-				display: grid;
-				grid-gap: 1em;
-				grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer"
-			  }
-			  @media only screen and (min-width: 500px) {
-				.wrapper {
-				  grid-template-columns: 20% auto;
-				  grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
-				}
-			  }
-			  @media only screen and (min-width: 600px) {
-				.wrapper {
-				  grid-gap: 20px;
-				  grid-template-columns: 120px auto 120px;
-				  grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
-				  max-width: 600px;
-				}
-			  }
-			  .box {
-				background-color: #444;
-				color: #ffffff;
-				border-radius: 5px;
-				padding: 10px;
-				font-size: 150%;
-			  }
-			  .header,
-			  .footer {
-				background-color: #8ebf42;
-			  }
-			  .sidebar2 {
-				background-color: #ccc;
-				color: #444;
-			  }
+		body {background-color: #444; margin: 0px;}
+		h1 {color: #fff}
+		p{color:#fff}
+		.sidebar {grid-area: sidebar;}
+		.sidebar2 {grid-area: sidebar2;}
+		.content {grid-area: content;}
+		 .header {grid-area: header;}
+		.footer {grid-area: footer;}
+		.wrapper {
+			display: grid;
+			grid-gap: 0em;
+			grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer"
+		}
+		@media only screen and (min-width: 500px) {
+		 .wrapper {
+		  grid-template-columns: 20% auto;
+		  grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+		 }
+		}
+		@media only screen and (min-width: 600px) {
+		 .wrapper {
+		  grid-gap: 20px;
+		  grid-template-columns: auto 500px auto;
+		  grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+		 }
+		}
+		.box {
+			padding: 10px;
+			font-size: 150%;
+		}
+		.header,
+		.footer {		}
+		.sidebar2 {		}
 	</style>
 </head>
 <body class="">
 
 	<div class="wrapper">
-		<div class="box header">Header</div>
-		<div class="box sidebar">Sidebar</div>
-		<div class="box sidebar2">Sidebar 2</div>
+		<div class="box header"> </div>
+		<div class="box sidebar"> </div>
+		<div class="box sidebar2"> </div>
 		<div class="box content">
 			<h1>Test page</h1>
 			<p>Testing</p>
-			<br /> When you resize the browser this column will be quite tall.
+			<p>Sample text</(p>)
 		</div>
-		<div class="box footer">Footer</div>
+		<div class="box footer"> </div>
 	</div>
 
 </body>
