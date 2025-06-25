@@ -14,93 +14,24 @@ h1 { text-wrap: balance; line-height: 1.25; box-sizing: border-box; font-size: 1
 h2 { text-wrap: balance; line-height: 1.25; margin-top: 1em;  margin-bottom: .25em; font-size: 1.45em; font-weight: 700; }
 .qu { color: #626262; margin-top: 1em; margin-bottom: 1em; font-size: .83em; }
 .sb { margin-top: 1em; margin-bottom: 1em; }
+.card { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
 } 
- .sticky-sidebar { position: sticky;top: 80px;height: calc(100vh - 130px);overflow-y: auto;flex-shrink: 0; top: 90px;} .main-content { flex-grow: 1;overflow-y: auto; height: calc(100vh - 130px); #tab_content { max-width: 600px; } } .sticky-footer { text-align: center; clear: both; position: relative; z-index: 8;} .uk-offcanvas-bar { top: 81px; box-shadow: 0 0 50px rgba(0, 0, 0, .2); } .grain_dark { /* resulting css */
-{
-  width: 250px;
-  height: 250px;
-  filter: contrast(100%) brightness(100%);
-  background: 
-	linear-gradient(18deg, rgba(38,38,38,85), rgba(0,0,0,0.85)),
-	url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='8.15' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-}
- .dark-mode {
-            background-color: #1a1a1a;
-            color: #f0f0f0;
-            filter: contrast(100%) brightness(100%);
-            background: 
-            linear-gradient(13deg, rgba(0,0,0,0.85), rgba(35,35,35,0.85)),
-            url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.14' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        }
-
-        .dark-mode .uk-navbar-container,
-        .dark-mode .sticky-sidebar,
-        .dark-mode .sticky-footer,
-        .dark-mode .uk-offcanvas-bar {
-            # background-color: #2c2c2c;
-            border-color: #444;
-            color: #f0f0f0;
-        }
-
-        .dark-mode .uk-card-default {
-            # background-color: #3a3a3a;
-            color: #f0f0f0;
-        }
-
-        .dark-mode .uk-card-primary {
-            # background-color: #0f476f;
-            color: #e0e0e0;
-        }
-
-        .dark-mode .uk-card-secondary {
-            # background-color: #555;
-            color: #e0e0e0;
-        }
-
-        .dark-mode a {
-            color: dodgerblue;
-        }
-
-        .dark-mode .uk-nav-default > li > a,
-        .dark-mode .uk-heading-bullet::before {
-            color: #f0f0f0;
-        }
-        
-        .dark-mode .uk-tab > * > a {
-            color: #ccc;
-            border-color: #444;
-        }
-
-        .dark-mode .uk-tab > .uk-active > a {
-            color: #fff;
-            border-color: #444;
-            border-bottom-color: #fff;
-        }
-        .dark-mode .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-3xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
-            color: #fff;
-        }
- #site-head {
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-.spacer {
-    height: 60px;
-}
-#site-foot {
-    position: fixed;
-    z-index: 3;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 0.8rem;
-}
+ .sticky-sidebar { position: sticky;top: 80px;height: calc(100vh - 130px);overflow-y: auto;flex-shrink: 0; top: 90px;} .main-content { flex-grow: 1;overflow-y: auto; height: calc(100vh - 130px); #tab_content { max-width: 600px; } } .sticky-footer { text-align: center; clear: both; position: relative; z-index: 8;} .uk-offcanvas-bar { top: 81px; box-shadow: 0 0 50px rgba(0, 0, 0, .2); } 
+.grain_dark { /* resulting css */
+{ width: 250px; height: 250px; filter: contrast(100%) brightness(100%); background: linear-gradient(18deg, rgba(38,38,38,85), rgba(0,0,0,0.85)), url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='8.15' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); } }
+ .dark-mode { background-color: #1a1a1a; color: #f0f0f0; filter: contrast(100%) brightness(100%); background: linear-gradient(13deg, rgba(0,0,0,0.85), rgba(35,35,35,0.85)), url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.14' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); }
+ .dark-mode .uk-navbar-container, .dark-mode .sticky-sidebar, .dark-mode .sticky-footer, .dark-mode .uk-offcanvas-bar { border-color: #444; color: #f0f0f0; }
+ .dark-mode .uk-card-default { color: #f0f0f0; }
+ .dark-mode .uk-card-primary { color: #e0e0e0; }
+ .dark-mode .uk-card-secondary { color: #e0e0e0; }
+ .dark-mode a { color: dodgerblue; }
+ .dark-mode .uk-nav-default > li > a, .dark-mode .uk-heading-bullet::before { color: #f0f0f0; }
+ .dark-mode .uk-tab > * > a { color: #ccc; border-color: #444; }
+ .dark-mode .uk-tab > .uk-active > a { color: #fff; border-color: #444; border-bottom-color: #fff; }
+ .dark-mode .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-3xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 { color: #fff; }
+ #site-head { padding: 10px 0; position: fixed; top: 0; left: 0; right: 0; z-index: 99; background-color: white; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+.spacer { height: 60px;}
+#site-foot { position: fixed;z-index: 3; bottom: 0; left: 0; right: 0; font-size: 0.8rem;}
 </style>
 <meta name="view-transition" content="same-origin">
 </head>
@@ -182,8 +113,25 @@ h2 { text-wrap: balance; line-height: 1.25; margin-top: 1em;  margin-bottom: .25
 			</div>
 		</header>
   <div class="spacer"></div>
-  <div id="sc-page-content">
-    <div data-uk-grid="" class="uk-grid">
+  <div id="sc-page-content" class="uk-container uk-container-xlarge">
+	<div class="uk-grid">
+		<div class="uk-width-medium">
+			<p>Hello</p>
+		  </div>
+		  <div class="uk-width-medium">
+			  <p>Hello</p>
+		  </div>
+		  <div class="uk-width-medium">
+			  <p>Hello</p>
+		  </div>
+		  <div class="uk-width-medium">
+			  <p>Hello</p>
+		  </div>
+		  <div class="uk-width-medium">
+			  <p>Hello</p>
+		  </div>
+	</div>
+    	<div data-uk-grid="" class="uk-grid">
 			<div class="uk-width-1-4@m uk-first-column">
 				<div class="uk-card"><div class="uk-card-body">.uk-width-1-4@m</div></div>
 			</div>
@@ -305,11 +253,12 @@ h2 { text-wrap: balance; line-height: 1.25; margin-top: 1em;  margin-bottom: .25
 		</div>
         <code class="uk-margin-small-top uk-display-inline-block">.uk-grid-collapse</code>
   </div>
+  <div class="spacer"></div>
   <footer id="site-foot" class="uk-section uk-section-secondary uk-section-xsmall">
-			<div class="uk-container uk-text-small uk-text-center">
-				<a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip=""><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a>
-			</div>
-		</footer>
+	<div class="uk-container uk-text-small uk-text-center">
+		<a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip=""><span data-uk-icon="uikit" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><polygon points="14.4,3.1 11.3,5.1 15,7.3 15,12.9 10,15.7 5,12.9 5,8.5 2,6.8 2,14.8 9.9,19.5 18,14.8 18,5.3"></polygon><polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon></svg></span></a>
+	</div>
+ </footer>
 
     <script src="uikit.min.js"></script>
     <script src="uikit-icons.min.js"></script>
